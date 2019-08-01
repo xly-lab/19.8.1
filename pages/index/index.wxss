@@ -1,0 +1,33 @@
+/* pages/index/index.wxss */
+page{
+  background-color:#405f80;/*afd0da*/
+}
+.FirstPages{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.FirstPages image{
+  margin: auto;
+  margin-top: 10px;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.FirstPages text{
+  margin: 100px auto;
+  font-size: 40rpx;
+}
+
+.FirstPages button{
+  text-align: center;
+  height: 80rpx;
+  width: 300rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid rgb(112, 133, 146);
+  background-color:#405f80;
+  font-size: 35rpx;
+  margin: auto;
+  line-height: 80rpx;
+}

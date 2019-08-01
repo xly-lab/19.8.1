@@ -1,0 +1,91 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.7",
+	"appid": "wxec71124c69e27083",
+	"projectname": "ReadAndMovie",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 4,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/hello/hello",
+					"pathName": "pages/hello/hello",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "pages/hello/article-detail/article-detail",
+					"pathName": "pages/hello/article-detail/article-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/movies/movies",
+					"pathName": "pages/movies/movies",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/movies/more-movies/more-movies",
+					"pathName": "pages/movies/more-movies/more-movies",
+					"query": "tip=\"hello\"",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "p",
+					"pathName": "pages/movies/movies-details/movies-details",
+					"query": "tip=\"hello\"",
+					"scene": null
+				}
+			]
+		}
+	}
+}

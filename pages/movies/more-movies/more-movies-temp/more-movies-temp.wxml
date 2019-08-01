@@ -1,0 +1,13 @@
+<import src="/pages/movies/movie/movie-temp.wxml" />
+<template name="movies-group">
+  <view class="more-movies">
+    <view class="test" 
+          wx:for="{{manyMovies}}" 
+          wx:key="i" 
+          wx:if="{{item.thumbnail && item.top_commentsName}}"
+          catchtap="goMovieDetails"
+          data-details="{{item.uid}}">
+      <template is="movie-img-temp1" data="{{...item}}"/>
+    </view>
+  </view>
+</template>

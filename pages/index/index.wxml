@@ -1,0 +1,7 @@
+<view class="FirstPages">
+  <image src="/images/avatar/1.png" />
+  <text>hello , Xly</text>
+  <view>
+    <button bindtap="goIn">开启小程序之旅</button>  
+  </view>
+</view>

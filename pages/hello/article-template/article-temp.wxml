@@ -1,0 +1,18 @@
+<template name="article-temp">
+  <view class="article-box">
+    <view class="article-avatar">
+      <image src="{{avatar}}"></image>
+      <text>{{date}}</text>
+    </view>
+    <text class="article-title">{{title}}</text>
+    <image class="img" src="{{imgSrc}}" mode="aspectFill"></image>
+    <text>{{content}}</text>
+    <view class="article-footer">
+      <image src="/images/icon/chat.png"></image>
+      <text>{{reading}}</text>
+      <image src="/images/icon/view.png"></image>
+      <text>{{collection}}</text>
+    </view>
+  </view>
+
+</template>

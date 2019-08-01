@@ -1,0 +1,21 @@
+<template name="star-temp">
+  <view class="star-temp">
+    <view class="star-stars">
+      <view wx:for="{{star}}" wx:key="i">
+        <image src="{{item===1?'/images/icon/star.png':'/images/icon/none-star.png'}}"></image>
+      </view>
+    </view>
+    <text>{{album_id}}</text>
+  </view>
+</template>
+
+<template name="star-temp1">
+  <view class="star-temp">
+    <view class="star-stars">
+      <view wx:for="{{star}}" wx:key="i">
+        <image src="{{item===1?'/images/icon/star.png':'/images/icon/none-star.png'}}"></image>
+      </view>
+    </view>
+    <text>{{soureid}}</text>
+  </view>
+</template>

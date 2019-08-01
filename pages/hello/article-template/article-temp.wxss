@@ -1,0 +1,36 @@
+.article-box{
+  margin: 20rpx 10rpx 20rpx 10rpx;
+  box-shadow: 0 0 10rpx #aaa;
+  display: flex;
+  flex-direction: column;
+}
+.article-box .article-avatar{
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.article-box .article-avatar image{
+  width: 90rpx;
+  height: 90rpx;
+  margin:5rpx 30rpx 0 10rpx;
+}
+.article-box .article-title{
+  font-size: 50rpx;
+}
+.article-box .img{
+  width: 100%;
+}
+.article-footer{
+  display: flex;
+  height: 60rpx;
+  width: 100%;
+}
+.article-footer image{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 15rpx 10rpx ;
+}
+.article-footer text{
+ line-height: 60rpx;
+ letter-spacing: 5rpx;
+}

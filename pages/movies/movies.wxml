@@ -1,0 +1,21 @@
+<import src="/pages/movies/movie-list/movie-list-temp.wxml"/>
+<import src="/pages/movies/more-movies/more-movies-temp/more-movies-temp.wxml"/>
+<view class="movies">
+    <view class="movies-search">
+      <image src="/images/icon/search.png"></image>
+      <input placeholder="四面埋伏"  
+             placeholder-class="input-class"
+             bindinput="getValue" 
+             value="{{value}}"
+             bindblur="getData"/>
+      <icon type="cancel" 
+            size="25" 
+            color="#405f80"
+            wx:if="{{showClose}}"
+            catchtap="cancelAll"/>
+    </view>
+   <template wx:if="{{showPages}}" is="movie-list-temp1" data="{{everyData , tip :'电影推荐'}}"/>
+   <template wx:if="{{showPages}}" is="movie-list-temp2" data="{{everyHot , tip :'最新电影'}}"/>
+   <template wx:if="{{showPages}}" is="movie-list-temp3" data="{{everyNew , tip :'热门电影'}}"/>
+   <template wx:if="{{!showPages}}" is="movies-group" data="{{manyMovies}}"/>
+</view>

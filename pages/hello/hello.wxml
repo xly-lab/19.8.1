@@ -1,0 +1,17 @@
+<import src="article-template/article-temp.wxml"/>
+<view>
+  <swiper class="img-swp" autoplay="true" indicator-dots="true">
+    <swiper-item>
+      <image bindtap="test" src="../../images/iqiyi.png" data-postid="{{5}}"></image> 
+    </swiper-item>
+    <swiper-item>
+      <image bindtap="test" src="../../images/vr.png" data-postid="{{4}}"></image> 
+    </swiper-item>  
+    <swiper-item>
+      <image bindtap="test" src="../../images/wx.png" data-postid="{{3}}"></image> 
+    </swiper-item>
+  </swiper>
+    <view bindtap="test" wx:for="{{articleData.postList}}" wx:key="i"  data-postid="{{item.postId}}">
+      <template is="article-temp" data="{{...item}}" />
+    </view>
+</view>

@@ -1,0 +1,17 @@
+<view class="essay">
+  <image class="img-top" src="{{essayData.headImgSrc}}" mode="aspectFill"></image>
+  <image bindtap="playMusic" class="essay-music" src="{{!isPlay?'/images/music/music-start.png':'/images/music/music-stop.png'}}"></image>
+  <view class="essay-avatar">
+    <image src="{{essayData.avatar}}"></image>
+    <text decode="{{true}}">{{essayData.author}} &ensp;  {{essayData.dateTime}}</text>
+  </view>
+  <text class="essay-title">{{essayData.title}}</text>
+  <view class="line"></view>
+  <view class="essay-other">
+      <image catchtap="shareTap" src="/images/icon/share.png" mode=""></image>
+      <image catchtap="collected" src="{{isCollected?'/images/icon/collection.png':'/images/icon/collection-anti.png'}}" mode=""></image>
+  </view>
+  <text class="essay-content" decode="{{true}}">
+          &emsp;&emsp;{{essayData.detail}}
+  </text>
+</view>

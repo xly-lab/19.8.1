@@ -1,0 +1,61 @@
+<import src="/pages/movies/movie/movie-temp.wxml"/>
+<template name="movie-list-temp1">
+  <view class="movie-list-temp" >
+    <view class="header">
+      <text>{{tip}}</text>
+      <view class="more" catchtap="moreHandle" data-tip="{{tip}}">
+        <text>更多</text>
+        <image src="/images/icon/arrow-right.png"></image>
+      </view>
+    </view>
+    <view class="movie-list-temp-movie" >
+      <view  wx:for="{{everyData}}" 
+             wx:key="i" 
+             catchtap="goMovieDetails"
+             data-details="{{item.song_id}}">
+        <template is="movie-img-temp" data="{{...item}}"/>
+      </view>
+    </view>
+  </view>
+
+</template>
+<template name="movie-list-temp2">
+  <view class="movie-list-temp">
+    <view class="header">
+      <text>{{tip}}</text>
+      <view class="more" catchtap="moreHandle" data-tip="{{tip}}">
+        <text>更多</text>
+        <image src="/images/icon/arrow-right.png"></image>
+      </view>
+    </view>
+    <view class="movie-list-temp-movie" >
+      <view wx:for="{{everyHot}}"
+            wx:key="i"
+            catchtap="goMovieDetails"
+            data-details="{{item}}">
+        <template is="movie-img-temp" data="{{...item}}"/>
+      </view>
+    </view>
+  </view>
+
+</template>
+<template name="movie-list-temp3">
+  <view class="movie-list-temp">
+    <view class="header">
+      <text>{{tip}}</text>
+      <view class="more" catchtap="moreHandle" data-tip="{{tip}}">
+        <text>更多</text>
+        <image src="/images/icon/arrow-right.png"></image>
+      </view>
+    </view>
+    <view class="movie-list-temp-movie" >
+      <view wx:for="{{everyNew}}" 
+            wx:key="i"
+            catchtap="goMovieDetails"
+            data-details="{{item}}">
+        <template is="movie-img-temp" data="{{...item}}"/>
+      </view>
+    </view>
+  </view>
+
+</template>

@@ -1,0 +1,62 @@
+/* pages/hello/article-detail/article-detail.wxss */
+text{
+  letter-spacing: 5rpx;
+}
+.essay{
+  display: flex;
+  flex-direction: column;
+}
+.essay image{
+  width: 100%;
+}
+.essay .essay-music{
+  position: relative;
+  width: 100rpx;
+  height: 100rpx;
+  top:-300rpx;
+  margin: auto;
+  opacity: 0.6;
+}
+.essay .essay-avatar{
+  display: flex;
+  position: relative;
+  height: 90rpx;
+  line-height: 90rpx;
+  top:-50rpx;
+}
+.essay .essay-avatar image{
+  width: 70rpx;
+  height: 70rpx;
+  margin: 10rpx;
+}
+.essay .essay-avatar text{
+  line-height: 90rpx;
+}
+.essay .essay-title{
+  font-size: 40rpx;
+  margin-left: 20rpx;
+}
+
+.essay .essay-other{
+  display: flex;
+  flex-direction: row-reverse
+}
+.essay .line{
+  border:1rpx solid #ccc ; 
+  width:90%;
+  height:0rpx;
+  position: relative;
+  top:60rpx;
+  z-index: -1;
+  margin-left: 30rpx;
+}
+.essay .essay-other image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx 20rpx;
+}
+.essay .essay-content{
+  letter-spacing: 8rpx;
+  color: #555;
+  margin: 20rpx;
+}

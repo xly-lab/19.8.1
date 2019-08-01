@@ -1,0 +1,15 @@
+<import src='/pages/movies/star/star-temp.wxml'/>
+<template name='movie-img-temp'>
+  <view class="movie-img-temp">
+    <image class="movie-img-temp-image" src="{{pic_big}}" mode="aspectFill"></image>
+    <text>{{title}}</text>
+    <template is="star-temp" data="{{album_id,star}}"/>
+  </view>
+</template>
+<template name='movie-img-temp1'>
+  <view class="movie-img-temp">
+    <image class="movie-img-temp-image" src="{{thumbnail}}" mode="aspectFill"></image>
+    <text>{{username}}</text>
+    <template is="star-temp1" data="{{soureid,star}}"/>
+  </view>
+</template>

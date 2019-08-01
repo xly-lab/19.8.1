@@ -1,0 +1,4 @@
+<import src="/pages/movies/more-movies/more-movies-temp/more-movies-temp.wxml"/>
+<view>
+  <template is="movies-group" data="{{manyMovies}}"/>
+</view>

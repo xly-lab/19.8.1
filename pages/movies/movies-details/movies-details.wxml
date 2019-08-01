@@ -1,0 +1,61 @@
+<import src="../star/star-temp.wxml" />
+<view class="container">
+  <image class="head-img" src="{{oneMovie.header?oneMovie.header:'/images/vr.png'}}" mode="aspectFill" />
+  <view class="head-img-hover" data-src="{{oneMovie.header}}" catchtap="viewMoviePostImg">
+    <text class="main-title">{{oneMovie.username?oneMovie.username:'hello movie'}}</text>
+    <text class="sub-title">{{oneMovie.country?oneMovie.country:'成都'}} · {{oneMovie.passtime?oneMovie.passtime:'2019-08-01'}}</text>
+    <view class="like">
+      <text class="highlight-font">
+        {{oneMovie.up|2019}}
+      </text>
+      <text class="plain-font">
+        人喜欢
+      </text>
+      <text class="highlight-font">
+        {{oneMovie.forward|1209}}
+      </text>
+      <text class="plain-font">
+        条评论
+      </text>
+    </view>
+  </view>
+  <image class="movie-img" src="{{oneMovie.header?oneMovie.header:'/images/vr.png'}}" data-src="{{oneMovie.movieImg}}" catchtap="viewMoviePostImg"/>
+  <view class="summary">
+    <view class="original-title">
+      <text>{{oneMovie.username?oneMovie.username:'就不告诉你'}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">评分</text>
+      <template is="star-temp1" data="{{star:oneMovie.star, soureid:oneMovie.soureid}}" />
+    </view>
+    <view class="flex-row">
+      <text class="mark">导演</text>
+      <text>{{oneMovie.top_commentsName?oneMovie.top_commentsName:'xly'}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">影人</text>
+      <text>{{oneMovie.top_commentsName?oneMovie.top_commentsName:'xxx xxx xxx'}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">类型</text>
+      <text>{{oneMovie.type}}</text>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="synopsis">
+    <text class="synopsis-font">剧情简介</text>
+    <text class="summary-content">{{oneMovie.top_commentsContent?oneMovie.top_commentsContent:'　律师李捷正在离婚进行时，与前夫争夺女儿抚养权，拼命工作为给孩子最好的生活，幸有保姆孙芳帮忙照顾孩子视如己出。 一日下班，李捷发现保姆孙芳和女儿毫无预兆地消失了，她内心最大的恐惧变成了现实。在追寻孙芳和女儿的下落时，她收到来自家人的谴责声讨，甚至遭到警方的怀疑。几乎崩溃的李捷，靠着惊人的勇气，踏上独自寻访的旅程。在追踪过程中，李捷逐渐接近了另一个女人——保姆孙芳的人生故事，她的身份原先都是谎言，而真相也将浮出水面。'}}</text>
+  </view>
+  <view class="hr"></view>
+  <view class="cast">
+    <text class="cast-font"> 影人</text>
+    <scroll-view class="cast-imgs" scroll-x="true" style="width:100%">
+      <!-- <block wx:for="{{oneMovie.castsInfo}}" wx:for-item="item"> -->
+        <view class="cast-container">
+          <image class="cast-img" src="{{oneMovie.thumbnail?oneMovie.thumbnail:'/images/vr.png'}}"></image>
+          <text class="cast-name">{{oneMovie.top_commentsName?oneMovie.top_commentsName:'xxx xxx xxx'}}</text>
+        </view>
+      <!-- </block> -->
+    </scroll-view>
+  </view>
+</view>

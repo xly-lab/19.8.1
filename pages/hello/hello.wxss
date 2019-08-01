@@ -1,0 +1,14 @@
+/* pages/hello/hello.wxss */
+@import "article-template/article-temp.wxss";
+text{
+  letter-spacing: 10rpx;
+  font-size: 25rpx;
+}
+.img-swp{
+  width: 100%;
+  height: 600rpx;
+}
+.img-swp swiper-item image{
+  width: 100%;
+  height: 100%;
+}

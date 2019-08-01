@@ -1,0 +1,34 @@
+@import '/pages/movies/star/star-temp.wxss';
+@import "/pages/movies/movie/movie-temp.wxss";
+@import "/pages/movies/movie-list/movie-list-temp.wxss";
+@import '/pages/movies/more-movies/more-movies-temp/more-movies-temp.wxss';
+page{
+  background-color: #eee
+}
+.movies{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.movies .movies-search{
+  height: 80rpx;
+  display: flex;
+}
+.movies .movies-search image{
+  height: 50rpx;
+  width: 50rpx;
+  margin: 15rpx;
+}
+.movies .movies-search input{
+  height: 80rpx;
+  flex: 1
+}
+.movies .movies-search icon{
+  margin: 10rpx 20rpx 20rpx 0;
+}
+
+.input-class{
+  font-size: 30rpx;
+  color: #ccc;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

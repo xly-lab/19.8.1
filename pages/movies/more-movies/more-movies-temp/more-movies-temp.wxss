@@ -1,0 +1,12 @@
+/* pages/movies/more-movies/more-movies.wxss */
+
+@import '/pages/movies/star/star-temp.wxss';
+@import "/pages/movies/movie/movie-temp.wxss";
+.more-movies{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.test{
+  margin-top: 5rpx;
+}

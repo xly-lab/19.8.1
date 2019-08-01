@@ -1,0 +1,37 @@
+.movie-list-temp{
+  margin: 20rpx 10rpx 10rpx 5rpx;
+  display: flex;
+  height: 600rpx;
+  width: 98%;
+  flex-direction: column;
+  border: 1rpx solid #ccc;
+  box-shadow: 0 5rpx 5rpx #aaa;
+  background-color: white;
+}
+.movie-list-temp .header{
+  height: 90rpx;
+  width:98%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 10rpx;
+  font-size: 30rpx;
+  color: #bbb;
+  justify-content: space-between;
+  line-height: 90rpx;
+}
+.movie-list-temp .header .more{
+  display: flex;
+  width: 120rpx;
+  color: rgb(64, 95, 128);
+  justify-content: space-between;
+}
+.movie-list-temp .header .more image{
+  margin-top: 32rpx;
+  margin-right: 15rpx;
+  height: 30rpx;
+  width: 30rpx;
+}
+.movie-list-temp .movie-list-temp-movie{
+  display: flex;
+  justify-content: space-around
+}

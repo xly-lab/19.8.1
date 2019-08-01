@@ -1,0 +1,20 @@
+/* pages/start/start.wxss */
+.star-temp{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+}
+.star-temp .star-stars{
+  display: flex;
+  margin-right: 24rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+}
+.star-temp .star-stars image{
+  width: 17rpx; 
+  height: 17rpx;
+  padding-top: 8rpx
+}
+.star-temp text{
+  font-size: 25rpx;
+}
